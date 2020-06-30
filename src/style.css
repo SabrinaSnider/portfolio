@@ -229,28 +229,13 @@ a:hover {
 }
 
 /* Landing Page */
-.circle {
+.particles-js-canvas-el {
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-}
-
-.circle-small {
-  top: -8vw;
-  left: -8vw;
-}
-
-#circle-image-small {
-  height: 27vw;
-  width: 27vw;
-}
-
-.circle-large {
-  bottom: -20vw;
-  right: -20vw;
-}
-
-#circle-image-large {
-  height: 46vw;
-  width: 46vw;
+  z-index: 100;
+  top: 0;
+  left: 0;
 }
 
 #intro-text {
@@ -259,21 +244,6 @@ a:hover {
   text-align: left;
   font-family: 'Inconsolata', monospace;
   margin: auto;
-}
-
-#overlay {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  display: flex;
-}
-
-.layer {
-  background-color: #eee4ff;
-  flex: 1;
 }
 
 #portfolio-arrow {
