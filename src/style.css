@@ -253,10 +253,6 @@ a:hover {
   width: 46vw;
 }
 
-#intro-content {
-  z-index: 100;
-}
-
 #intro-text {
   padding: 0px 15px;
   width: 60vw;
@@ -331,8 +327,6 @@ a:hover {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
-  /* Content */
-  background-color: #263238;
 }
 
 #selfie {

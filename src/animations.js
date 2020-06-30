@@ -18,19 +18,10 @@ animateWork();
  * Animates the landing page of the website
  */
 function animateLandingPage () {
-  // Overlay
-  gsap.to('.layer-left', {y: '-100vh', delay: .5});
-  gsap.to('.layer-middle', {y: '-100vh', delay: .7});
-  gsap.to('.layer-right', {y: '-100vh', delay: .9});
-  gsap.to('#overlay', {y: '-100vh', delay: 1.5});
-
-  // Rotate circles
-  gsap.to('.circle', 20, {rotation:"360", ease: Linear.easeNone, repeat: -1});
-
-  // Fade in portfolio button
-  gsap.fromTo('#portfolio-button', 2,
-      {opacity: 0}, 
-      {x: '0', opacity: 1, ease:'back.out(1.7)', delay: 4.5});
+  // Particle.js animated background
+  particlesJS.load('particles-js', 'static-files/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
 
   // Typewriter effect for title
   const mainHeader = document.getElementById('big-header-main')
@@ -39,7 +30,7 @@ function animateLandingPage () {
   ityped.init(mainHeader, { 
     strings: ["Hi, I'm Sabrina"], 
     typeSpeed: 50, 
-    startDelay: 1800, 
+    startDelay: 500, 
     loop: false, 
     showCursor: false,
   });
@@ -47,10 +38,15 @@ function animateLandingPage () {
   ityped.init(subHeader, { 
     strings: ["I like to code"], 
     typeSpeed: 50, 
-    startDelay: 3200, 
+    startDelay: 2000, 
     loop: false, 
     showCursor: false,
   });
+
+  // Fade in portfolio button
+  gsap.fromTo('#portfolio-button', 2,
+      {opacity: 0}, 
+      {x: '0', opacity: 1, ease:'back.out(1.7)', delay: 3.5});
 }
 
 /**

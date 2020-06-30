@@ -7,141 +7,130 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body onload="init();">
-    <div id="content">
+  <body>
+    <div id="particles-js" style="background-color: black;">
       <section id="intro">
-        <div id="intro-content">
-          <div id="intro-text">
-            <h1 id="big-header-main" class="big-header-main">></h1>
-            <h1 id="sub-header-main" class="sub-header-main">></h1>
-            <div id="portfolio-button-container">
-              <a id="portfolio-button" class="white-button" href="#about-me-section"
-                onmouseover="portfolioButtonHoverOn()"
-                onmouseout="portfolioButtonHoverOff()">
-                View my portfolio
-                <img id="portfolio-arrow" src="./static-files/images/icons/arrow.svg" >
-              </a>
-            </div>
+        <div id="intro-text">
+          <h1 id="big-header-main" class="big-header-main">></h1>
+          <h1 id="sub-header-main" class="sub-header-main">></h1>
+          <div id="portfolio-button-container">
+            <a id="portfolio-button" class="white-button" href="#about-me-section"
+              onmouseover="portfolioButtonHoverOn()"
+              onmouseout="portfolioButtonHoverOff()">
+              View my portfolio
+              <img id="portfolio-arrow" src="./static-files/images/icons/arrow.svg" >
+            </a>
           </div>
         </div>
-
-        <div class="circle circle-small"><img id="circle-image-small" src="./static-files/images/circle.svg"></div>
-        <div class="circle circle-large"><img id="circle-image-large" src="./static-files/images/circle2.svg"></div>
-      </section>
-
-      <div id="navbar" class="stick-to-top">
-        <div id="nav-header">
-          <a href="#intro"><h1 id="nav-name">Sabrina Snider</h1></a>
-        </div>
-        <div id="nav-links">
-          <a href="#about-me-section" class="nav-item">About Me</a>
-          <a href="#work-section"  class="nav-item">Work</a>
-          <a id="resume-button" class="white-button" href="./static-files/sabrina_snider_resume.pdf" download>Resume</a>
-        </div>
-      </div>
-
-      <div id="overlay">
-        <div class="layer layer-left"></div>
-        <div class="layer layer-middle"></div>
-        <div class="layer layer-right"></div>
-      </div>
-
-      <section id="about-me-section" class="white-background">
-        <h1 id="about-me-title" class="section-header"><span>About Me</span></h1>
-        <div id="about-me-content" class="section-content">
-          <div id="selfie-container">
-            <img id="selfie" src="./static-files/images/selfie.jpg">
-          </div>
-          <div id="bio">
-            <p id="bio-text">
-              I'm a software developer and computer science junior at the University of Florida. I love 
-              exploring new fields of programming and using my software skills to solve real-world problems.
-            </p>
-            <div id="skills">
-              <div class="row">
-                <span id="java" class="programming-language" data-language="Java" data-years="5 years"></span>
-                <span id="python" class="programming-language" data-language="Python" data-years="3 years"></span>
-                <span id="cpp" class="programming-language" data-language="C++" data-years="2 years"></span>
-              </div>
-              <div class="row">
-                <span id="html" class="programming-language" data-language="HTML" data-years="3 years"></span>
-                <span id="css" class="programming-language" data-language="CSS" data-years="3 years"></span>
-                <span id="javascript" class="programming-language" data-language="Javascript" data-years="1 year"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="work-section" class="gray-background">
-        <h1 id="work-title" class="section-header work"><span>My Work</span></h1>
-        <div class="section-content work">
-          <div id="google-work" class="workplace">
-            <img class="work-logo google" src="./static-files/images/work-images/webdev.png">
-            <div id="google-info" class="work-info align-right">
-              <h3 class="work-title">STEP Intern</h3>
-              <h2 class="work-details">Google - Summer 2020</h2>
-              <p class="work-description">
-                Where I am now! I'm working on web dev projects using <b>HTML</b>, <b>CSS</b>, <b>javascript</b>,
-                and a <b>Java</b> backend using <b>Maven</b>. Multiple google APIs are being integrated in the
-                websites.
-              </p>
-            </div>
-          </div>
-
-          <div id="uf-work" class="workplace">
-            <div id="uf-info" class="work-info">
-              <h3 class="work-title">Programming 1 TA</h3>
-              <h2 class="work-details">University of Florida - Fall 2019, Spring 2020</h2>
-              <p class="work-description">
-                Mentored a class of 600 students on fundamental programming concepts using <b>Java</b>. Content 
-                spanned object-oriented programming, inheritence, and polymorphism. 
-              </p>
-            </div>
-            <img class="work-logo uf" src="./static-files/images/work-images/java.png">
-          </div>
-
-          <div id="infotech-work" class="workplace">
-            <img class="work-logo infotech" src="./static-files/images/work-images/data-analysis.png">
-            <div id="infotech-info" class="work-info align-right">
-              <h3 class="work-title">Data Analytics Intern</h3>
-              <h2 class="work-details">InfoTech - Summer 2019</h2>
-              <p class="work-description">
-                Developed a data analytics dashboard for company statistics using the <b>Dash</b> framework and 
-                <b>Plotly</b>. Used <B>HTML</B> and <b>CSS</b> to develop a responseive front-end, and used 
-                <b>python</b> and <b>SQL</b> for the backend.
-              </p>
-            </div>
-          </div>
-
-          <div id="medtronic-work" class="workplace last">
-            <div id="medtronic-info" class="work-info">
-              <h3 class="work-title">R&D Intern</h3>
-              <h2 class="work-details">Medtronic - Summer 2018</h2>
-              <p class="work-description">
-                Performed electrical and low-level software tasks to help development of a nerve-monitoring device 
-                for surgery, including testing wireless protocols, assembling breadboard circuits, and validating 
-                PCB impedances.
-              </p>
-            </div>
-            <img class="work-logo medtronic" src="./static-files/images/work-images/oscilloscope.svg">
-          </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="footer">
-        <a href="https://www.linkedin.com/in/sabrina-snider" target="_blank">
-          <img id="linkedin" class="footer-icon" src="./static-files/images/icons/linkedin.png">
-        </a>
-        <a href="https://github.com/SabrinaSnider" target="_blank">
-          <img id="github" class="footer-icon" src="./static-files/images/icons/github.png">
-        </a>
-        <a href="mailto:sabrina.snider10@gmail.com" target="_blank">
-          <img id="gmail" class="footer-icon" src="./static-files/images/icons/gmail.png">
-        </a>
       </section>
     </div>
+
+    <div id="navbar" class="stick-to-top">
+      <div id="nav-header">
+        <a href="#intro"><h1 id="nav-name">Sabrina Snider</h1></a>
+      </div>
+      <div id="nav-links">
+        <a href="#about-me-section" class="nav-item">About Me</a>
+        <a href="#work-section"  class="nav-item">Work</a>
+        <a id="resume-button" class="white-button" href="./static-files/sabrina_snider_resume.pdf" download>Resume</a>
+      </div>
+    </div>
+
+    <section id="about-me-section" class="white-background">
+      <h1 id="about-me-title" class="section-header"><span>About Me</span></h1>
+      <div id="about-me-content" class="section-content">
+        <div id="selfie-container">
+          <img id="selfie" src="./static-files/images/selfie.jpg">
+        </div>
+        <div id="bio">
+          <p id="bio-text">
+            I'm a software developer and computer science junior at the University of Florida. I love 
+            exploring new fields of programming and using my software skills to solve real-world problems.
+          </p>
+          <div id="skills">
+            <div class="row">
+              <span id="java" class="programming-language" data-language="Java" data-years="5 years"></span>
+              <span id="python" class="programming-language" data-language="Python" data-years="3 years"></span>
+              <span id="cpp" class="programming-language" data-language="C++" data-years="2 years"></span>
+            </div>
+            <div class="row">
+              <span id="html" class="programming-language" data-language="HTML" data-years="3 years"></span>
+              <span id="css" class="programming-language" data-language="CSS" data-years="3 years"></span>
+              <span id="javascript" class="programming-language" data-language="Javascript" data-years="1 year"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-section" class="gray-background">
+      <h1 id="work-title" class="section-header work"><span>My Work</span></h1>
+      <div class="section-content work">
+        <div id="google-work" class="workplace">
+          <img class="work-logo google" src="./static-files/images/work-images/webdev.png">
+          <div id="google-info" class="work-info align-right">
+            <h3 class="work-title">STEP Intern</h3>
+            <h2 class="work-details">Google - Summer 2020</h2>
+            <p class="work-description">
+              Where I am now! I'm working on web dev projects using <b>HTML</b>, <b>CSS</b>, <b>javascript</b>,
+              and a <b>Java</b> backend using <b>Maven</b>. Multiple google APIs are being integrated in the
+              websites.
+            </p>
+          </div>
+        </div>
+
+        <div id="uf-work" class="workplace">
+          <div id="uf-info" class="work-info">
+            <h3 class="work-title">Programming 1 TA</h3>
+            <h2 class="work-details">University of Florida - Fall 2019, Spring 2020</h2>
+            <p class="work-description">
+              Mentored a class of 600 students on fundamental programming concepts using <b>Java</b>. Content 
+              spanned object-oriented programming, inheritence, and polymorphism. 
+            </p>
+          </div>
+          <img class="work-logo uf" src="./static-files/images/work-images/java.png">
+        </div>
+
+        <div id="infotech-work" class="workplace">
+          <img class="work-logo infotech" src="./static-files/images/work-images/data-analysis.png">
+          <div id="infotech-info" class="work-info align-right">
+            <h3 class="work-title">Data Analytics Intern</h3>
+            <h2 class="work-details">InfoTech - Summer 2019</h2>
+            <p class="work-description">
+              Developed a data analytics dashboard for company statistics using the <b>Dash</b> framework and 
+              <b>Plotly</b>. Used <B>HTML</B> and <b>CSS</b> to develop a responseive front-end, and used 
+              <b>python</b> and <b>SQL</b> for the backend.
+            </p>
+          </div>
+        </div>
+
+        <div id="medtronic-work" class="workplace last">
+          <div id="medtronic-info" class="work-info">
+            <h3 class="work-title">R&D Intern</h3>
+            <h2 class="work-details">Medtronic - Summer 2018</h2>
+            <p class="work-description">
+              Performed electrical and low-level software tasks to help development of a nerve-monitoring device 
+              for surgery, including testing wireless protocols, assembling breadboard circuits, and validating 
+              PCB impedances.
+            </p>
+          </div>
+          <img class="work-logo medtronic" src="./static-files/images/work-images/oscilloscope.svg">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <a href="https://www.linkedin.com/in/sabrina-snider" target="_blank">
+        <img id="linkedin" class="footer-icon" src="./static-files/images/icons/linkedin.png">
+      </a>
+      <a href="https://github.com/SabrinaSnider" target="_blank">
+        <img id="github" class="footer-icon" src="./static-files/images/icons/github.png">
+      </a>
+      <a href="mailto:sabrina.snider10@gmail.com" target="_blank">
+        <img id="gmail" class="footer-icon" src="./static-files/images/icons/gmail.png">
+      </a>
+    </section>
 
     <!-- GSAP, ScrollMagic, and animation scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.js" integrity="sha256-6XkFW5TxJs4szKCpO2psd/MCRA5QZ0PFoiym+2CaSqg=" crossorigin="anonymous"></script>
@@ -149,6 +138,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="https://unpkg.com/ityped@1.0.3"></script>
-    <script src="./scripts/animations.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="animations.js"></script>
   </body>
 </html>
