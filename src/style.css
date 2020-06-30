@@ -233,9 +233,12 @@ a:hover {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  z-index: 100;
   top: 0;
   left: 0;
+}
+
+#intro {
+  z-index: 100;
 }
 
 #intro-text {
