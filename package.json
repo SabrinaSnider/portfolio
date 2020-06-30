@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website created in summer 2020",
+  "main": "index.js",
+  "dependencies": {
+    "typed.js": "^2.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SabrinaSnider/portfolio.git"
+  },
+  "author": "Sabrina Snider",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SabrinaSnider/portfolio/issues"
+  },
+  "homepage": "https://github.com/SabrinaSnider/portfolio#readme"
+}
