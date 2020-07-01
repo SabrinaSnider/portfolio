@@ -25,23 +25,14 @@ function animateLandingPage () {
 
   // Typewriter effect for title
   const mainHeader = document.getElementById('big-header-main')
-  const subHeader = document.getElementById('sub-header-main')
 
-  ityped.init(mainHeader, { 
-    strings: ["Hi, I'm Sabrina"], 
-    typeSpeed: 50, 
-    startDelay: 500, 
-    loop: false, 
-    showCursor: false,
-  });
-
-  ityped.init(subHeader, { 
-    strings: ["I like to code"], 
-    typeSpeed: 50, 
-    startDelay: 2000, 
-    loop: false, 
-    showCursor: false,
-  });
+  var options = {
+    strings: ["Hi, I'm <span style='color:#7d54c4'>Sabrina.</span> ^700I like to code."],
+    typeSpeed: 35,
+    showCursor: false
+  };
+  
+  new Typed('#big-header-main', options);
 
   // Fade in portfolio button
   gsap.fromTo('#portfolio-button', 2,
