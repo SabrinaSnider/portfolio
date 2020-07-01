@@ -475,6 +475,10 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+  section {
+    padding: 10px;
+  }
+
   #intro {
     padding: 0px;
   }
@@ -509,5 +513,14 @@ a:hover {
   .section-header span:after {
     left: 0%;
     border: none;
+  }
+
+  .work-logo {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .work-info, .work-description {
+    width: 100%;
   }
 }
