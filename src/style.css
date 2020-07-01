@@ -454,6 +454,10 @@ a:hover {
     align-items: center;
   }
 
+  #uf-work, #medtronic-work {
+    flex-direction: column-reverse;
+  }
+
   .align-right, .align-right p {
     text-align: center;
   }
