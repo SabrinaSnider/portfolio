@@ -4,6 +4,7 @@ html {
 } 
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -246,7 +247,6 @@ a:hover {
   padding: 0px 15px;
   text-align: center;
   width: 58vw;
-  text-align: left;
   font-family: 'Inconsolata', monospace;
   margin: auto;
 }
@@ -274,13 +274,13 @@ a:hover {
 }
 
 #portfolio-button-container { 
-  width: 100%; 
   text-align: center;
-  padding: 10px;
+  padding: 1vw;
 }
 
 #portfolio-button {
   font-size: 1.7vw;
+  padding: .7vw;
   border-width: 2px;
 }
 
@@ -396,7 +396,7 @@ a:hover {
   height: 20rem;
 }
 
-.work-info.align-right, .work-info.align-right p {
+.align-right, .align-right p {
   text-align: right;
 }
 
@@ -428,4 +428,79 @@ a:hover {
   height: 40px;
   width: 40px;
   margin: 40px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+  #about-me-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #selfie-container {
+    max-width: 600px;
+  }
+
+  #bio {
+    padding: 0px;
+  }
+
+  #bio p {
+    text-align: center;
+  }
+
+  .workplace {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .align-right, .align-right p {
+    text-align: center;
+  }
+
+  .work-info {
+    text-align: center;
+  }
+  
+  .work-logo {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  #intro {
+    padding: 0px;
+  }
+
+  #intro-text {
+    width: 95vw;
+  }
+
+  .big-header-main {
+    font-size: 5vh;
+    height: 10vh;
+  }
+
+  #portfolio-button-container {
+    padding: 2vh;
+  }
+
+  #portfolio-button {
+    font-size: 2vh;
+    padding: .8vh;
+  }
+
+  .section-header {
+    border-bottom: 1px solid #673ab7;;
+  }
+
+  .section-header span:before {
+    right: 0%;
+    border: none;
+  }
+  
+  .section-header span:after {
+    left: 0%;
+    border: none;
+  }
 }
