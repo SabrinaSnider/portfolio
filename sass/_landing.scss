@@ -58,6 +58,12 @@
   font-size: 1.7vw;
 }
 
+@supports (-webkit-appearance:none) {
+  #intro {
+    height: calc(100vh - 56px);
+  }
+}
+
 @media (max-width: 1000px) {
   #portfolio-button,
   #portfolio-arrow {
