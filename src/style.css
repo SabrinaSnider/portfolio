@@ -156,22 +156,31 @@ a:hover {
   height: 1.25rem;
   width: 1.25rem;
   margin-left: 20px;
+  display: none;
 }
 
 #collapsed-navbar {
   position: sticky;
-  width: fit-content;
-  margin: 0px 0px 0px auto;
   right: 0;
   top: 4rem;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: right;
+  background-color: #171e22;
+  display: none;
+  padding-bottom: 10px;
+  z-index: 100;
 }
 
-.nav-item.collapsed {
-  background-color: #171e22;
+.nav-item.collapsed,
+#resume-button.collapsed {
+  margin: 4px 20px 4px auto;
+  width: fit-content;
+  float: right;
+}
+
+#resume-button.collapsed {
+  padding: 5px;
 }
 
 @media (max-width: 800px) {
@@ -180,9 +189,8 @@ a:hover {
     display: none;
   }
 
-  .nav-item {
-    margin: 0px;
-    padding: 10px 0px;
+  #collapsed-navbar {
+    display: flex;
   }
 
   #menu-icon {
