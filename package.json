@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "Portfolio website created in summer 2020",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "sass": "^1.26.9"
+  },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --no-source-map ./src/sass/main.scss ./src/style.css"
   },
   "repository": {
     "type": "git",

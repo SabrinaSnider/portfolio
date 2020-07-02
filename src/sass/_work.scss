@@ -1,0 +1,87 @@
+/* Work */
+#work-section {
+  overflow: hidden;
+}
+
+.section-content.work {
+  max-width: 900px;
+}
+
+.workplace {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.workplace:not(.last) {
+  margin-bottom: 100px;
+}
+
+.work-info {
+  width: 50%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.work-logo {
+  height: 20rem;
+}
+
+.align-right, .align-right p {
+  text-align: right;
+}
+
+.work-title {
+  font-size: 2.5rem;
+  margin: 10px 0px;
+}
+
+.work-details {
+  font-size: 1.3rem;
+  color: rgb(50, 44, 63);
+}
+
+.work-description {
+  padding: 0px;
+  font-size: 1.1rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+  .workplace {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #uf-work, #medtronic-work {
+    flex-direction: column-reverse;
+  }
+
+  .align-right, .align-right p {
+    text-align: center;
+  }
+
+  .work-info, .work-description {
+    align-items: center;
+    text-align: center;
+    width: 90%;
+  }
+  
+  .work-logo {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .work-logo {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .work-info, .work-description {
+    width: 100%;
+  }
+}

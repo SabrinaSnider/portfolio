@@ -1,0 +1,96 @@
+/* Navigation */
+#navbar {
+  /* Display */
+  height: 4rem;
+  padding: 20px;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  /* Layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: sticky;
+  /* Content */
+  background-color: #263238;
+}
+
+#nav-name {
+  color: #ede7f6;
+  font-size: 1.3rem;
+  margin: 0px 10px;
+}
+
+#nav-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-item {
+  color: #b39ddb;
+  font-size: 1.25rem;
+  font-family: 'Inconsolata', monospace;
+  margin: 0px 20px;
+}
+
+#resume-button {
+  margin: 0px;
+}
+
+/* Landing Page */
+.particles-js-canvas-el {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #263238;
+}
+
+#intro {
+  z-index: 100;
+}
+
+#intro-text {
+  padding: 0px 15px;
+  text-align: center;
+  width: 58vw;
+  font-family: 'Inconsolata', monospace;
+  margin: auto;
+}
+
+#portfolio-arrow {
+  height: 1.8vw;
+  vertical-align: middle;
+}
+
+.big-header-main {
+  color: #ede7f6;
+  font-size: 7vw;
+  height: 14vw;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.sub-header-main {
+  color: #9f8cb3;
+  font-size: 7vw;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+#portfolio-button-container { 
+  text-align: center;
+  padding: 1vw;
+}
+
+#portfolio-button {
+  font-size: 1.7vw;
+  padding: .7vw;
+  border-width: 2px;
+}

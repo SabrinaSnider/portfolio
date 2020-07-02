@@ -1,18 +1,18 @@
 /* DEFAULT TAGS */
-html { 
-  scroll-behavior: smooth; 
-} 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 button {
   background: none;
-	border: none;
+  border: none;
 }
 
 p {
@@ -81,7 +81,6 @@ a:hover {
 }
 
 /* CONTENT-SPECIFIC */
-
 /* Generic content styles */
 .section-header {
   /* Display */
@@ -106,10 +105,12 @@ a:hover {
   top: 50%;
   width: 50%;
 }
+
 .section-header span:before {
   right: 100%;
   margin-right: 15px;
 }
+
 .section-header span:after {
   left: 100%;
   margin-left: 15px;
@@ -186,8 +187,26 @@ a:hover {
   cursor: pointer;
 }
 
-/* Navigation */
+@media (max-width: 600px) {
+  section {
+    padding: 10px;
+  }
 
+  .section-header {
+    border-bottom: 1px solid #673ab7;
+  }
+
+  .section-header span:before {
+    right: 0%;
+    border: none;
+  }
+
+  .section-header span:after {
+    left: 0%;
+    border: none;
+  }
+}
+/* Navigation */
 #navbar {
   /* Display */
   height: 4rem;
@@ -221,7 +240,7 @@ a:hover {
 .nav-item {
   color: #b39ddb;
   font-size: 1.25rem;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   margin: 0px 20px;
 }
 
@@ -247,7 +266,7 @@ a:hover {
   padding: 0px 15px;
   text-align: center;
   width: 58vw;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   margin: auto;
 }
 
@@ -273,17 +292,63 @@ a:hover {
   font-weight: bold;
 }
 
-#portfolio-button-container { 
+#portfolio-button-container {
   text-align: center;
   padding: 1vw;
 }
 
 #portfolio-button {
   font-size: 1.7vw;
-  padding: .7vw;
+  padding: 0.7vw;
   border-width: 2px;
 }
 
+@media (max-width: 600px) {
+  #intro {
+    padding: 0px;
+  }
+
+  #intro-text {
+    width: 95vw;
+  }
+
+  .big-header-main {
+    font-size: 5vh;
+    height: 10vh;
+  }
+
+  #portfolio-button-container {
+    padding: 2vh;
+  }
+
+  #portfolio-button {
+    font-size: 2vh;
+    padding: 0.8vh;
+  }
+}
+@media (max-width: 600px) {
+  #intro {
+    padding: 0px;
+  }
+
+  #intro-text {
+    width: 95vw;
+  }
+
+  .big-header-main {
+    font-size: 5vh;
+    height: 10vh;
+  }
+
+  #portfolio-button-container {
+    padding: 2vh;
+  }
+
+  #portfolio-button {
+    font-size: 2vh;
+    padding: 0.8vh;
+  }
+}
 /* About Me */
 #about-me-content {
   display: flex;
@@ -318,7 +383,7 @@ a:hover {
   margin-bottom: 35px;
 }
 
-#bio { 
+#bio {
   text-align: center;
   padding: 50px;
   font-size: 1.4rem;
@@ -340,7 +405,7 @@ a:hover {
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  transition: background-color .6s;
+  transition: background-color 0.6s;
   /* Layout */
   margin: 10px;
   display: flex;
@@ -365,6 +430,25 @@ a:hover {
   content: attr(data-years);
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+  #about-me-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #selfie-container {
+    max-width: 600px;
+  }
+
+  #bio {
+    padding: 0px;
+  }
+
+  #bio p {
+    text-align: center;
+  }
+}
 /* Work */
 #work-section {
   overflow: hidden;
@@ -407,7 +491,7 @@ a:hover {
 
 .work-details {
   font-size: 1.3rem;
-  color: rgb(50, 44, 63);
+  color: #322c3f;
 }
 
 .work-description {
@@ -415,40 +499,8 @@ a:hover {
   font-size: 1.1rem;
 }
 
-/* Footer */
-.footer {
-  background-color: #263238;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 10px;
-}
-
-.footer-icon {
-  height: 40px;
-  width: 40px;
-  margin: 40px;
-}
-
 /* MEDIA QUERIES */
 @media (max-width: 800px) {
-  #about-me-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #selfie-container {
-    max-width: 600px;
-  }
-
-  #bio {
-    padding: 0px;
-  }
-
-  #bio p {
-    text-align: center;
-  }
-
   .workplace {
     flex-direction: column;
     align-items: center;
@@ -468,53 +520,12 @@ a:hover {
     text-align: center;
     width: 90%;
   }
-  
+
   .work-logo {
     max-width: 400px;
   }
 }
-
 @media (max-width: 600px) {
-  section {
-    padding: 10px;
-  }
-
-  #intro {
-    padding: 0px;
-  }
-
-  #intro-text {
-    width: 95vw;
-  }
-
-  .big-header-main {
-    font-size: 5vh;
-    height: 10vh;
-  }
-
-  #portfolio-button-container {
-    padding: 2vh;
-  }
-
-  #portfolio-button {
-    font-size: 2vh;
-    padding: .8vh;
-  }
-
-  .section-header {
-    border-bottom: 1px solid #673ab7;;
-  }
-
-  .section-header span:before {
-    right: 0%;
-    border: none;
-  }
-  
-  .section-header span:after {
-    left: 0%;
-    border: none;
-  }
-
   .work-logo {
     max-width: 250px;
     max-height: 250px;
@@ -523,4 +534,18 @@ a:hover {
   .work-info, .work-description {
     width: 100%;
   }
+}
+/* Footer */
+.footer {
+  background-color: #263238;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.footer-icon {
+  height: 40px;
+  width: 40px;
+  margin: 40px;
 }
