@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --no-source-map ./src/sass/main.scss ./src/style.css"
+    "sass": "sass --no-source-map ./sass/main.scss ./style.css"
   },
   "repository": {
     "type": "git",
