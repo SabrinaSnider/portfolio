@@ -1,6 +1,7 @@
-/* Footer */
+@import "colors";
+
 .footer {
-  background-color: #263238;
+  background-color: $dark-gray;
   display: flex;
   flex-direction: row;
   justify-content: center;

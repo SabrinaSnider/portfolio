@@ -1,3 +1,60 @@
+@import "colors";
+
+.particles-js-canvas-el {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $dark-gray;
+}
+
+#intro {
+  z-index: 100;
+}
+
+#intro-text {
+  padding: 0px 15px;
+  text-align: center;
+  width: 58vw;
+  font-family: 'Inconsolata', monospace;
+  margin: auto;
+}
+
+#portfolio-arrow {
+  height: 1.8vw;
+  vertical-align: middle;
+}
+
+#landing-header {
+  color: $white;
+  font-size: 7vw;
+  height: 14vw;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+#portfolio-button-container { 
+  text-align: center;
+  padding: 1vw;
+}
+
+#portfolio-button {
+  /* Display */
+  border: 2px solid $white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: .7vw;
+  /* Layout */
+  display: inline-block;
+  /* Content */
+  color: $white;
+  font-weight: bold;
+  font-size: 1.7vw;
+}
+
+
 @media (max-width: 600px) {
   #intro {
     padding: 0px;
@@ -7,7 +64,7 @@
     width: 95vw;
   }
 
-  .big-header-main {
+  #landing-header {
     font-size: 5vh;
     height: 10vh;
   }
@@ -31,7 +88,7 @@
     width: 95vw;
   }
 
-  .big-header-main {
+  #landing-header {
     font-size: 5vh;
     height: 10vh;
   }

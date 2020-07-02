@@ -1,4 +1,5 @@
-/* Navigation */
+@import "colors";
+
 #navbar {
   /* Display */
   height: 4rem;
@@ -14,11 +15,11 @@
   box-sizing: border-box;
   position: sticky;
   /* Content */
-  background-color: #263238;
+  background-color: $dark-gray;
 }
 
 #nav-name {
-  color: #ede7f6;
+  color: $white;
   font-size: 1.3rem;
   margin: 0px 10px;
 }
@@ -30,67 +31,27 @@
 }
 
 .nav-item {
-  color: #b39ddb;
+  color: $lavender;
   font-size: 1.25rem;
   font-family: 'Inconsolata', monospace;
   margin: 0px 20px;
 }
 
 #resume-button {
+  /* Display */
+  border: 1.5px solid $white;
+  border-radius: 5px;
+  padding: 10px;
   margin: 0px;
-}
-
-/* Landing Page */
-.particles-js-canvas-el {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #263238;
-}
-
-#intro {
-  z-index: 100;
-}
-
-#intro-text {
-  padding: 0px 15px;
-  text-align: center;
-  width: 58vw;
-  font-family: 'Inconsolata', monospace;
-  margin: auto;
-}
-
-#portfolio-arrow {
-  height: 1.8vw;
-  vertical-align: middle;
-}
-
-.big-header-main {
-  color: #ede7f6;
-  font-size: 7vw;
-  height: 14vw;
-  margin: 0px;
-  padding: 0px;
+  /* Layout */
+  display: inline-block;
+  /* Content */
+  color: $white;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
-.sub-header-main {
-  color: #9f8cb3;
-  font-size: 7vw;
-  margin: 0px;
-  padding: 0px;
-  font-weight: bold;
-}
-
-#portfolio-button-container { 
-  text-align: center;
-  padding: 1vw;
-}
-
-#portfolio-button {
-  font-size: 1.7vw;
-  padding: .7vw;
-  border-width: 2px;
+#resume-button:hover {
+  background-color: $white;
+  color: $dark-gray;
 }

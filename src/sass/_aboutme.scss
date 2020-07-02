@@ -1,4 +1,5 @@
-/* About Me */
+@import "colors";
+
 #about-me-content {
   display: flex;
   flex-direction: row;
@@ -26,7 +27,7 @@
 }
 
 #selfie-container {
-  background-color: #574385;
+  background-color: $faded-purple;
   border-radius: 4px;
   padding: 35px;
   margin-bottom: 35px;
@@ -36,11 +37,11 @@
   text-align: center;
   padding: 50px;
   font-size: 1.4rem;
-}
 
-#bio p {
-  text-align: right;
-  margin-bottom: 20px;
+  p {
+    text-align: right;
+    margin-bottom: 20px;
+  }
 }
 
 .row {
@@ -61,14 +62,14 @@
   flex-direction: column;
   justify-content: center;
   /* Content */
-  background-color: #b39ddb;
-  color: white;
+  background-color: $lavender;
+  color: $white;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
 .programming-language:hover {
-  background-color: #673ab7;
+  background-color: $header-purple;
 }
 
 .programming-language:after {
@@ -92,9 +93,9 @@
 
   #bio {
     padding: 0px;
-  }
 
-  #bio p {
-    text-align: center;
+    p {
+      text-align: center;
+    }
   }
 }

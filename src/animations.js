@@ -1,12 +1,12 @@
-// Color constants
+// Color constants.
 const OFF_WHITE = '#ede7f6';
 const PORTFOLIO_HOVER_BLUE = '#00bcd4';
 
-// Animation constants
+// Animation constants.
 const EASE_IN_RIGHT = {x: '100vw', ease: "Power2.easeOut"};
 const EASE_IN_LEFT = {x: '-100vw', ease: "Power2.easeOut"};
 
-// Allow scrolling to trigger section animations
+// Allow scrolling to trigger section animations.
 const scrollController = new ScrollMagic.Controller();
 
 // Animate each section
@@ -15,17 +15,15 @@ animateAboutMe();
 animateWork();
 
 /**
- * Animates the landing page of the website
+ * Animates the landing page of the website.
  */
 function animateLandingPage () {
-  // Particle.js animated background
+  // Particle.js animated background.
   particlesJS.load('particles-js', 'static-files/particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
 
-  // Typewriter effect for title
-  const mainHeader = document.getElementById('big-header-main')
-
+  // Typewriter effect for title.
   var options = {
     strings: ["Hi,^200 I'm <span style='color:#7d54c4'>Sabrina.</span> ^700I like to code."],
     typeSpeed: 35,
@@ -33,9 +31,9 @@ function animateLandingPage () {
     showCursor: false
   };
   
-  new Typed('#big-header-main', options);
+  new Typed('#landing-header', options);
 
-  // Fade in portfolio button
+  // Fade in portfolio button.
   gsap.fromTo('#portfolio-button', 2,
       {opacity: 0}, 
       {x: '0', opacity: 1, ease:'back.out(1.7)', delay: 4.5});
@@ -66,7 +64,7 @@ function animateAboutMe() {
 }
 
 /**
- * Animates the Work section of the website
+ * Animates the Work section of the website.
  */
 function animateWork() {
   animateWorkplaceImage(".google", "#google-work", true);
@@ -75,7 +73,7 @@ function animateWork() {
   animateWorkplaceImage(".medtronic", "#medtronic-work", false);
 }
 
-// Event handlers
+// Event handlers.
 
 /**
  * When hovering onto the "View My Portfolio" button, animate the 
@@ -104,7 +102,7 @@ function portfolioButtonHoverOff() {
   gsap.to("#portfolio-arrow", .2, {rotation: "0", ease: Linear.easeNone});
 }
 
-// Helper functions
+// Helper functions.
 
 /**
  * Function that slides in workplace images as you scroll down.
