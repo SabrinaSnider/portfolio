@@ -241,6 +241,7 @@ a:hover {
 #landing-header {
   color: white;
   font-size: 7vw;
+  min-height: 15vw;
   margin: 0px;
   padding: 0px;
   font-weight: bold;
@@ -279,6 +280,7 @@ a:hover {
 
   #landing-header {
     font-size: 5vh;
+    min-height: 11vw;
   }
 
   #portfolio-button-container {
