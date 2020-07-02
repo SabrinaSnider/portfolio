@@ -231,7 +231,7 @@ a:hover {
 }
 
 #portfolio-arrow {
-  height: 1.8vw;
+  height: 1.7vw;
   vertical-align: middle;
 }
 
@@ -262,24 +262,10 @@ a:hover {
   font-size: 1.7vw;
 }
 
-@media (max-width: 600px) {
-  #intro {
-    padding: 0px;
-    width: 95vw;
-  }
-
-  #landing-header {
-    font-size: 5vh;
-    height: 10vh;
-  }
-
-  #portfolio-button-container {
-    padding: 2vh;
-  }
-
-  #portfolio-button {
-    font-size: 2vh;
-    padding: 0.8vh;
+@media (max-width: 1000px) {
+  #portfolio-button,
+#portfolio-arrow {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 600px) {
@@ -290,7 +276,6 @@ a:hover {
 
   #landing-header {
     font-size: 5vh;
-    height: 10vh;
   }
 
   #portfolio-button-container {
@@ -530,4 +515,12 @@ a:hover {
   height: 40px;
   width: 40px;
   margin: 7px 40px;
+}
+
+@media (max-width: 400px) {
+  .footer-icon {
+    height: 35px;
+    width: 35px;
+    margin: 2px 25px;
+  }
 }

@@ -27,7 +27,7 @@
 }
 
 #portfolio-arrow {
-  height: 1.8vw;
+  height: 1.7vw;
   vertical-align: middle;
 }
 
@@ -58,24 +58,10 @@
   font-size: 1.7vw;
 }
 
-@media (max-width: 600px) {
-  #intro {
-    padding: 0px;
-    width: 95vw;
-  }
-
-  #landing-header {
-    font-size: 5vh;
-    height: 10vh;
-  }
-
-  #portfolio-button-container {
-    padding: 2vh;
-  }
-
-  #portfolio-button {
-    font-size: 2vh;
-    padding: .8vh;
+@media (max-width: 1000px) {
+  #portfolio-button,
+  #portfolio-arrow {
+    font-size: 1.5rem;
   }
 }
 
@@ -87,7 +73,6 @@
 
   #landing-header {
     font-size: 5vh;
-    height: 10vh;
   }
 
   #portfolio-button-container {
