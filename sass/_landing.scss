@@ -1,5 +1,9 @@
 @import "colors";
 
+#particles-js {
+  height: 100%;
+}
+
 .particles-js-canvas-el {
   width: 100vw;
   height: 100vh;
@@ -58,11 +62,6 @@
   font-size: 1.7vw;
 }
 
-@supports (-webkit-appearance:none) {
-  #intro {
-    height: calc(100vh - 56px);
-  }
-}
 
 @media (max-width: 1000px) {
   #portfolio-button,
