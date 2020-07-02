@@ -62,12 +62,7 @@ function animateAboutMe() {
   aboutmeAnimation.from("#selfie-container", 1, EASE_IN_LEFT)
   aboutmeAnimation.from("#bio-text", 1, EASE_IN_RIGHT, "=-1")
 
-  aboutmeAnimation.from("#java", 1, EASE_IN_RIGHT, "=-.9")
-  aboutmeAnimation.from("#python", 1, EASE_IN_RIGHT, "=-.9")
-  aboutmeAnimation.from("#cpp", 1, EASE_IN_RIGHT, "=-.9")
-  aboutmeAnimation.from("#html", 1, EASE_IN_RIGHT, "=-.6")
-  aboutmeAnimation.from("#css", 1, EASE_IN_RIGHT, "=-.9")
-  aboutmeAnimation.from("#javascript", 1, EASE_IN_RIGHT, "=-.9")
+  aboutmeAnimation.from("#skills", 1, EASE_IN_RIGHT, "=-.8")
 
   const aboutmeTrigger = new ScrollMagic.Scene({
     triggerElement: "#about-me-section",
