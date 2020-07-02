@@ -3,8 +3,8 @@ const OFF_WHITE = '#ede7f6';
 const PORTFOLIO_HOVER_BLUE = '#00bcd4';
 
 // Animation constants.
-const EASE_IN_RIGHT = {x: '100vw', ease: "Power2.easeOut"};
-const EASE_IN_LEFT = {x: '-100vw', ease: "Power2.easeOut"};
+const EASE_IN_RIGHT = {x: '300px', opacity: '0', ease: "Power2.easeOut"};
+const EASE_IN_LEFT = {x: '-300px', opacity: '0', ease: "Power2.easeOut"};
 
 // Allow scrolling to trigger section animations.
 const scrollController = new ScrollMagic.Controller();
