@@ -40,7 +40,7 @@ function animateLandingPage () {
   // Typewriter effect for title.
   var options = {
     strings: ["Hi,^200 I'm <span style='color:#7d54c4'>Sabrina.</span> ^700I like to code."],
-    typeSpeed: 35,
+    typeSpeed: 28,
     startDelay: 800,
     showCursor: false
   };
@@ -50,7 +50,7 @@ function animateLandingPage () {
   // Fade in portfolio button.
   gsap.fromTo('#portfolio-button', 2,
       {opacity: 0}, 
-      {x: '0', opacity: 1, ease:'back.out(1.7)', delay: 4.5});
+      {x: '0', opacity: 1, ease:'back.out(1.7)', delay: 5});
 }
 
 /**
