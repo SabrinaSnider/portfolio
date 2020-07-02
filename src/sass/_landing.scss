@@ -10,15 +10,20 @@
 }
 
 #intro {
-  z-index: 100;
-}
-
-#intro-text {
-  padding: 0px 15px;
-  text-align: center;
+  /* Display */
+  height: 100vh;
   width: 58vw;
-  font-family: 'Inconsolata', monospace;
+  z-index: 100;
   margin: auto;
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
 }
 
 #portfolio-arrow {
@@ -29,7 +34,6 @@
 #landing-header {
   color: $white;
   font-size: 7vw;
-  height: 14vw;
   margin: 0px;
   padding: 0px;
   font-weight: bold;
@@ -54,13 +58,13 @@
   font-size: 1.7vw;
 }
 
+@media (max-width: 800px) {
+  
+}
 
 @media (max-width: 600px) {
   #intro {
     padding: 0px;
-  }
-
-  #intro-text {
     width: 95vw;
   }
 
@@ -82,9 +86,6 @@
 @media (max-width: 600px) {
   #intro {
     padding: 0px;
-  }
-
-  #intro-text {
     width: 95vw;
   }
 

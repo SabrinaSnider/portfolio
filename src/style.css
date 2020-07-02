@@ -161,15 +161,20 @@ a:hover {
 }
 
 #intro {
-  z-index: 100;
-}
-
-#intro-text {
-  padding: 0px 15px;
-  text-align: center;
+  /* Display */
+  height: 100vh;
   width: 58vw;
-  font-family: "Inconsolata", monospace;
+  z-index: 100;
   margin: auto;
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
 }
 
 #portfolio-arrow {
@@ -180,7 +185,6 @@ a:hover {
 #landing-header {
   color: white;
   font-size: 7vw;
-  height: 14vw;
   margin: 0px;
   padding: 0px;
   font-weight: bold;
@@ -208,9 +212,6 @@ a:hover {
 @media (max-width: 600px) {
   #intro {
     padding: 0px;
-  }
-
-  #intro-text {
     width: 95vw;
   }
 
@@ -231,9 +232,6 @@ a:hover {
 @media (max-width: 600px) {
   #intro {
     padding: 0px;
-  }
-
-  #intro-text {
     width: 95vw;
   }
 
@@ -256,19 +254,6 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   overflow: hidden;
-}
-
-#intro {
-  /* Display */
-  height: 100vh;
-  /* Layout */
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  box-sizing: border-box;
-  overflow: hidden;
-  position: relative;
 }
 
 #selfie {
@@ -330,7 +315,6 @@ a:hover {
   content: attr(data-years);
 }
 
-/* MEDIA QUERIES */
 @media (max-width: 800px) {
   #about-me-content {
     flex-direction: column;
@@ -444,5 +428,5 @@ a:hover {
 .footer-icon {
   height: 40px;
   width: 40px;
-  margin: 40px;
+  margin: 7px 40px;
 }

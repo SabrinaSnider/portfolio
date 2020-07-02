@@ -7,19 +7,6 @@
   overflow: hidden;
 }
 
-#intro {
-  /* Display */
-  height: 100vh;
-  /* Layout */
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  box-sizing: border-box;
-  overflow: hidden;
-  position: relative;
-}
-
 #selfie {
   height: 35rem;
   border-radius: 4px;
@@ -80,7 +67,6 @@
   content: attr(data-years);
 }
 
-/* MEDIA QUERIES */
 @media (max-width: 800px) {
   #about-me-content {
     flex-direction: column;
