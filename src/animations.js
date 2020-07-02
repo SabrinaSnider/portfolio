@@ -15,6 +15,20 @@ animateAboutMe();
 animateWork();
 
 /**
+ * Animate the collapsed menu in and out on click.
+ */
+function animateCollapsedMenu() {
+  let navbar = document.getElementById("collapsed-navbar");
+  if (navbar.dataset.shown === "true") {
+    gsap.to('#collapsed-navbar', 1, {x: '0px', ease: "Power2.easeOut"});
+    navbar.dataset.shown = "falase";
+  } else {
+    gsap.to('#collapsed-navbar', 1, {x: '100px', ease: "Power2.easeOut"});
+    navbar.dataset.shown = "true";
+  }
+}
+
+/**
  * Animates the landing page of the website.
  */
 function animateLandingPage () {

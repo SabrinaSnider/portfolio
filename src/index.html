@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <div id="navbar" class="stick-to-top">
+    <div id="navbar">
       <div id="nav-header">
         <a href="#intro"><h1 id="nav-name">Sabrina Snider</h1></a>
       </div>
@@ -31,10 +31,16 @@
         <a href="#about-me-section" class="nav-item">About Me</a>
         <a href="#work-section"  class="nav-item">Work</a>
         <a id="resume-button" class="white-button" href="./static-files/sabrina_snider_resume.pdf" download>Resume</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <img id="menu-icon" src="./static-files/images/icons/menu.svg">
+        <a>
+          <img id="menu-icon" src="./static-files/images/icons/menu.svg" onclick="animateCollapsedMenu()">
         </a>
       </div>
+    </div>
+    
+    <div id="collapsed-navbar" data-shown="false">
+      <a href="#about-me-section" class="nav-item collapsed">About Me</a>
+      <a href="#work-section"  class="nav-item collapsed">Work</a>
+      <a id="resume-button" class="white-button collapsed" href="./static-files/sabrina_snider_resume.pdf" download>Resume</a>
     </div>
 
     <section id="about-me-section" class="white-background">
