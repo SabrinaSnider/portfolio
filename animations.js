@@ -60,9 +60,7 @@ function animateAboutMe() {
   const aboutmeAnimation = new TimelineMax();
 
   aboutmeAnimation.from("#selfie-container", 1, EASE_IN_LEFT)
-  aboutmeAnimation.from("#bio-text", 1, EASE_IN_RIGHT, "=-1")
-
-  aboutmeAnimation.from("#skills", 1, EASE_IN_RIGHT, "=-.8")
+  aboutmeAnimation.from("#bio", 1, EASE_IN_RIGHT, "=-1")
 
   const aboutmeTrigger = new ScrollMagic.Scene({
     triggerElement: "#about-me-section",
