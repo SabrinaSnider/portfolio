@@ -13,3 +13,11 @@
   width: 40px;
   margin: 7px 40px;
 }
+
+@media (max-width: 400px) {
+  .footer-icon {
+    height: 35px;
+    width: 35px;
+    margin: 2px 25px;
+  }
+}

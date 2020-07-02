@@ -17,14 +17,14 @@ animateWork();
 /**
  * Animate the collapsed menu in and out on click.
  */
-function animateCollapsedMenu() {
+function toggleCollapsedMenu() {
   let navbar = document.getElementById("collapsed-navbar");
   if (navbar.dataset.shown === "true") {
-    gsap.to('#collapsed-navbar', .4, {opacity: "0", ease: "Power2.easeOut"});
-    navbar.dataset.shown = "falase";
+    navbar.dataset.shown = "false";
+    navbar.style.display = "none";
   } else {
-    gsap.to('#collapsed-navbar', .4, {opacity: '100%', ease: "Power2.easeIn"});
     navbar.dataset.shown = "true";
+    navbar.style.display = "flex";
   }
 }
 
